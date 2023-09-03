@@ -11,8 +11,14 @@
 
 <body>
     <h1>Hello, Vue</h1>
+    <h2>This website is strictly for learning vue concepts. Styling is only to remove visual clutter.</h2>
 
     <div id="app">
+
+        <!-- Attribute Binding - using v-bind: will make the attached data attribute dynamic 
+             This can also be done using just a colon - : is the shortcut-->
+        <a v-bind:href="url" target="_blank" >My Portfolio!!</a>
+
         <!-- v-if is for conditionals -->
         <div v-if="showBooks">
 

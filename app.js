@@ -7,6 +7,7 @@ const app = Vue.createApp({
     // Shorthand for a function within an object 
     data() {
         return {
+            url: "https://nicolasdenysenko.ca",
             showBooks: true,
             title: 'The Final Empire',
             author: 'Brandon Sanderson',
