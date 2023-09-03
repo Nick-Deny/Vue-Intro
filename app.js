@@ -15,9 +15,9 @@ const app = Vue.createApp({
             x: 0,
             y: 0,
             books: [
-                {title: 'name of the wind', author: 'patrick rothfuss'},
-                {title: 'the way of kings', author: 'brandon sanderson'},
-                {title: 'the final empire', author: 'brandon sanderson'},
+                {title: 'name of the wind', author: 'patrick rothfuss', isFav: true},
+                {title: 'the way of kings', author: 'brandon sanderson', isFav: false},
+                {title: 'the final empire', author: 'brandon sanderson', isFav: true},
             ],
         }
     },
@@ -25,6 +25,10 @@ const app = Vue.createApp({
         toggleShowBooks(){
             // Good way to toggle on/off
             this.showBooks = !this.showBooks
+        },
+        
+        toggleFav(book) {
+            book.isFav = !book.isFav
         },
 
         // Runs whenever we click "change title"

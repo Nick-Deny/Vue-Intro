@@ -21,3 +21,11 @@ button{
     margin: 20px;
     display: inline-block;
 }
+
+li {
+    max-width: 12vw;
+}
+
+.fav {
+    background-color: rgb(73, 202, 73);
+}

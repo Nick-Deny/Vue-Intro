@@ -36,7 +36,10 @@
 
             <ul>
                 <!-- v-for functions as a loop -->
-                <li v-for="book in books">
+                <!-- For dynamic classes, can use key:value pairs -->
+                <h2>Click to change favourite books!</h2>
+                
+                <li v-for="book in books" :class="{ fav: book.isFav}" @click="toggleFav(book)">
                     <h3>{{ book.title }}</h3>
                     <p> {{ book.author }}</p>
                 </li>
